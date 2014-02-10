@@ -1,0 +1,38 @@
+{
+  "name": "gulp-typescript",
+  "version": "0.0.0",
+  "description": "Compile TypeScript",
+  "license": "MIT",
+  "repository": "sindresorhus/gulp-typescript",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "typescript",
+    "ts",
+    "tsc",
+    "compile",
+    "compiler",
+    "transpile"
+  ],
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "through2": "~0.4.0",
+    "typestring": "~0.9.5"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
