@@ -1,4 +1,4 @@
-# [gulp](http://gulpjs.com)-typescript [![Build Status](https://secure.travis-ci.org/sindresorhus/gulp-typescript.png?branch=master)](http://travis-ci.org/sindresorhus/gulp-typescript)
+# [gulp](http://gulpjs.com)-typescript [![Build Status](https://travis-ci.org/sindresorhus/gulp-typescript.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-typescript)
 
 > Compile TypeScript
 
@@ -7,12 +7,12 @@
 
 ## Install
 
-```
-npm install --save-dev gulp-typescript
+```bash
+$ npm install --save-dev gulp-typescript
 ```
 
 
-## Example
+## Usage
 
 ```js
 var gulp = require('gulp');
@@ -28,4 +28,4 @@ gulp.task('default', function () {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
