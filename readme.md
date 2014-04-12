@@ -19,7 +19,7 @@ var gulp = require('gulp');
 var typescript = require('gulp-typescript');
 
 gulp.task('default', function () {
-	gulp.src('app.ts')
+	return gulp.src('app.ts')
 		.pipe(typescript())
 		.pipe(gulp.dest('dist'));
 });
