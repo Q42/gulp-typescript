@@ -19,9 +19,15 @@ module.exports = function (name) {
 		try {
 			file.contents = new Buffer(ts.compile(file.contents.toString()));
 			file.path = gutil.replaceExtension(file.path, '.js');
-		} catch (err) {
-			err.fileName = file.path;
-			this.emit('error', new gutil.PluginError('gulp-typescript', err));
+		} catch (errorList) {
+			errorList.forEach(function(err) {
+
+			this.emit('error', new gutil.PluginError('gulp-typescript', {
+					message: err.text(),
+					fileName: file.path,
+					lineNumber: err.line()
+				}));
+			}.bind(this));
 		}
 
 		this.push(file);
